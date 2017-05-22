@@ -15,6 +15,15 @@
     <%= f.input :price %>
   </div>
 
+  <% if @product.image.present? %>
+    <span> 跑记模版缩略图 </span> <br>
+    <%= image_tag(@product.image.thumb.url) %>
+  <% end %>
+
+  <div class="group">
+    <%= f.input :image, as: :file %>
+  </div>
+
   <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>
 
 <% end %>
