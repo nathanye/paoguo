@@ -10,7 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170522075321) do
+ActiveRecord::Schema.define(version: 20170526060310) do
+
+  create_table "pp1s", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "date"
+    t.string   "week"
+    t.string   "yinli"
+    t.string   "weather"
+    t.string   "begin_time"
+    t.string   "finish_time"
+    t.string   "from_where"
+    t.string   "how_to_go"
+    t.string   "main_place"
+    t.string   "run_begin_time"
+    t.string   "run_finish_time"
+    t.string   "how_long_time"
+    t.integer  "how_long_kilos"
+    t.string   "stretch_or_not"
+    t.string   "how_to_go_back"
+    t.string   "back_to_where"
+    t.string   "about_people"
+    t.string   "about_ideas"
+    t.string   "about_serendipities"
+    t.string   "about_others"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
 
   create_table "product01s", force: :cascade do |t|
     t.integer  "count",      default: 0
