@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20170522075321) do
 
+
   create_table "product01s", force: :cascade do |t|
     t.integer  "count",      default: 0
     t.datetime "created_at",             null: false
