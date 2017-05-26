@@ -1,0 +1,15 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h4>
+    生成跑记
+    </h4>
+  </div>
+  <div class="panel-body">
+    <%= simple_form_for [@pp1, @pp1a] do |f| %>
+      <%= f.input :content, :label => "邀约说明" %>
+
+<hr>
+      <%= f.submit "送 出" %>
+    <% end %>
+  </div>
+</div>

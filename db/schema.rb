@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170526060310) do
+ActiveRecord::Schema.define(version: 20170526080541) do
+
+  create_table "pp1as", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "pp1_id"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "pp1s", force: :cascade do |t|
     t.integer  "user_id"
