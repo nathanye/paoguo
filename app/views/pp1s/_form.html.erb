@@ -1,0 +1,26 @@
+<%= simple_form_for @pp1 do |f| %>
+  <div class="form_group">
+    <%= f.input :date, input_html: { class: "form_control" } %>
+    <%= f.input :week, input_html: { class: "form_control" } %>
+    <%= f.input :yinli, input_html: { class: "form_control" } %>
+    <%= f.input :weather, input_html: { class: "form_control" } %>
+    <%= f.input :begin_time, input_html: { class: "form_control" } %>
+    <%= f.input :finish_time, input_html: { class: "form_control" } %>
+    <%= f.input :from_where, input_html: { class: "form_control" } %>
+    <%= f.input :how_to_go, input_html: { class: "form_control" } %>
+    <%= f.input :main_place, input_html: { class: "form_control" } %>
+    <%= f.input :run_begin_time, input_html: { class: "form_control" } %>
+    <%= f.input :run_finish_time, input_html: { class: "form_control" } %>
+    <%= f.input :how_long_time, input_html: { class: "form_control" } %>
+    <%= f.input :how_long_kilos, input_html: { class: "form_control" } %>
+    <%= f.input :stretch_or_not, input_html: { class: "form_control" } %>
+    <%= f.input :how_to_go_back, input_html: { class: "form_control" } %>
+    <%= f.input :back_to_where, input_html: { class: "form_control" } %>
+    <%= f.input :about_people, input_html: { class: "form_control" } %>
+    <%= f.input :about_ideas, input_html: { class: "form_control" } %>
+    <%= f.input :about_serendipities, input_html: { class: "form_control" } %>
+    <%= f.input :about_others, input_html: { class: "form_control" } %>
+
+  </div>
+    <%= f.submit "提交", class: "btn btn-primary", data: { :disable_with => '接收中……' } %>
+<% end %>

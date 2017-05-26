@@ -1,0 +1,21 @@
+<h2> 个人跑记信息核对 </h2>
+
+<table class = "table">
+  <thead>
+    <tr>
+      <th>什么鱼</th>
+      <th>投放者</th>
+      <th>入水时间</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @pp1.how_long_kilos %></td>
+      <td><%= @pp1.date %></td>
+      <td><%= @pp1.week %></td>
+      <td> <%= link_to('Edit', edit_pp1_path(@pp1), class: "btn btn-default btn-xs") %></td>
+      <td> <%= link_to('Delete', pp1_path(@pp1), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default btn-xs") %></td>
+    </tr>
+  </tbody>
+</table>
