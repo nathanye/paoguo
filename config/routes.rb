@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   namespace :admin do
     resources :products
+    resources :pages
     resources :pp1s do
       resources :pp1as
     end
