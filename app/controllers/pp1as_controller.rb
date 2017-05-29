@@ -10,8 +10,7 @@ class Pp1asController < ApplicationController
     @pp1a.pp1 = @pp1
     @pp1a.user = current_user
     # require 'html_massage'
-
-  html = %{
+    html = %{
     <html>
       <head>
         <script type="text/javascript">document.write('I am a bad script');</script>
