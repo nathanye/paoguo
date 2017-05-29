@@ -1,5 +1,25 @@
 <h2> 个人跑记信息核对 </h2>
 
+<div class="panel-heading"><%= @pp1.date %>跑步日记</div>
+<div class="panel-body">
+  <p>
+    <%= @pp1.date %> <%= @pp1.week %><%= @pp1.yinli %>，<%= @pp1.weather %>
+    <br>
+    <%= @pp1.begin_time %>出门<%= @pp1.finish_time %>进门。
+    <br>
+    从<%= @pp1.from_where %><%= @pp1.how_to_go %>到<%= @pp1.main_place %>，<%= @pp1.run_begin_time %>到<%= @pp1.run_finish_time %>之间，<%= @pp1.how_long_time %>跑了<%= @pp1.how_long_kilos %>千米。<%= @pp1.stretch_or_not %>拉伸，<%= @pp1.how_to_go_back %>回<%= @pp1.back_to_where %>。
+<br>
+    人：<%= @pp1.about_people %>
+<br>
+    想：<%= @pp1.about_ideas %>
+<br>
+    遇：<%= @pp1.about_serendipities %>
+<br>
+    它：<%= @pp1.about_others %>
+
+   </p>
+</div>
+
 <table class = "table">
   <thead>
     <tr>
