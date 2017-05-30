@@ -18,6 +18,11 @@
     它：<%= @pp1.about_others %>
 
    </p>
+
+   <p>
+      <%= link_to("加入购物车", add_to_cart_pp1_path(@pp1), :method => :post, :class => "btn btn-primary btn-danger") %>
+   </p>
+
 </div>
 
 <table class = "table">
