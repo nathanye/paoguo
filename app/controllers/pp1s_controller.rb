@@ -18,6 +18,7 @@ class Pp1sController < ApplicationController
   def show
     @pp1 = Pp1.find(params[:id])
   end
+
   private
   def pp1_params
     params.require(:pp1).permit(:date, :week, :yinli, :weather, :begin_time, :finish_time, :from_where, :how_to_go, :main_place, :run_begin_time, :run_finish_time, :how_long_time, :how_long_kilos, :stretch_or_not, :how_to_go_back, :back_to_where, :about_people, :about_ideas, :about_serendipities, :about_others)
