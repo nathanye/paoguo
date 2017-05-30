@@ -14,5 +14,8 @@ Rails.application.routes.draw do
   resources :pp1s do
     resources :pp1as
   end
+  get 'test' => 'pp1#test'
+
+
 
 end
