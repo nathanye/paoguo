@@ -15,11 +15,7 @@ Rails.application.routes.draw do
 
   resources :products
 
-  resources :pp1s do
-    member do
-      post :add_to_cart
-    end
-  end
+  resources :pp1s
 
   get 'test' => 'pp1#test'
 
