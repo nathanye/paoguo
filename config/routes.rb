@@ -23,4 +23,6 @@ Rails.application.routes.draw do
 
   get 'test' => 'pp1#test'
 
+  resources :carts
+
 end

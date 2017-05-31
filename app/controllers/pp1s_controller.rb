@@ -21,8 +21,8 @@ class Pp1sController < ApplicationController
 
   def add_to_cart
     @pp1 = Pp1.find(params[:id])
+    current_cart.add_pp1_to_cart(@pp1)
     redirect_to :back
-    flash[:notice] = "测试加入购物车"
   end
 
 
