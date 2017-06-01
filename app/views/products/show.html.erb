@@ -10,10 +10,9 @@
     <h2> <%= @product.title %> </h2>
     <div style="height:100px;">
       <p>
-        <%= @product.description %>
+        <%= markdown(@product.description)%>
       </p>
     </div>
-    <!-- <div> 数量 : <%= @product.quantity %> </div> -->
     <div class="product-price"> ￥ <%= @product.price %> </div>
     <div class="pull-right">
       <%= link_to("开始定制", "#", :class => "btn btn-danger btn-lg") %>
