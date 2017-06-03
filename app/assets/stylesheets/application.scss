@@ -115,11 +115,27 @@
 
  //---------Footer---------
 
- footer {
-     color: white;
+ html {
+   position: relative;
+   min-height: 100%;
  }
 
- footer .footer-below {
-     padding: 10px 0;
-     background-color: #BF360C;
+ body {
+   /* Margin bottom by footer height */
+   margin-bottom: 100px;
+ }
+
+ .footer-below {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 100px;
+    margin: 0 -15px;
+    background-color: #BF360C;
+
+    p {
+        color: white;
+        margin-top: 30px;
+      }
  }
