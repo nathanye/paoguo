@@ -1,6 +1,16 @@
-<div class="row">
+<div class="row box">
+  <div class="box-description col-md-6 col-md-offset-3">
+     <p class="slogan">
+       我们提供模版，你来选择模版。
+<br>
+ 我们保存纪录，你来观赏纪录。
+<br>
+ 我们掌握技术，你来利用技术。
+ </p>
+ </div>
   <% @products.each do |product| %>
-    <div class="col-xs-6 col-md-3">
+    <div class="col-lg-4 col-xs-6 col-md-3">
+
       <%= link_to product_path(product) do %>
         <% if product.image.present? %>
           <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
