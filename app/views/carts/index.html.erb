@@ -13,20 +13,27 @@
       </thead>
       <tbody>
 
+        <% current_cart.cart_items.each do |cart_item| %>
 
           <tr>
 
             <td>
-              <%= link_to(cart_item.product.title, product_path(cart_item.product)) %>
+             <%= link_to("个人跑记", pp1s_path(cart_item.pp1)) %>
             </td>
-            <td>
-              <%= cart_item.product.price %>
-            </td>
-            <td>
-              <%= cart_item.quantity %>
-            </td>
-          </tr>
 
+            <td>
+            </td>
+
+            <td>
+              <%= "5元" %>
+            </td>
+
+            <td>
+              <%= "1" %>
+            </td>
+
+          </tr>
+         <% end %>
 
       </tbody>
     </table>
