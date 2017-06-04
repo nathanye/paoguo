@@ -1,0 +1,37 @@
+{
+  "name": "startbootstrap-sb-admin-2",
+  "title": "SB Admin 2",
+  "version": "3.3.7",
+  "homepage": "http://startbootstrap.com/template-overviews/sb-admin-2",
+  "author": "Start Bootstrap",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^1.5.4",
+    "jshint": "^2.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BlackrockDigital/startbootstrap-sb-admin-2.git"
+  },
+  "description": "[![CDNJS](https://img.shields.io/cdnjs/v/startbootstrap-sb-admin-2.svg)](https://cdnjs.com/libraries/startbootstrap-sb-admin-2)",
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-sb-admin-2/issues"
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "ls"
+  },
+  "keywords": [
+    "list",
+    "stuff"
+  ]
+}

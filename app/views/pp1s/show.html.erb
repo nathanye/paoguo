@@ -1,0 +1,46 @@
+<h2> 个人跑记信息核对 </h2>
+
+<div class="panel-heading"><%= @pp1.date %>跑步日记</div>
+<div class="panel-body">
+  <p>
+    <%= @pp1.date %> <%= @pp1.week %><%= @pp1.yinli %>，<%= @pp1.weather %>
+    <br>
+    <%= @pp1.begin_time %>出门<%= @pp1.finish_time %>进门。
+    <br>
+    从<%= @pp1.from_where %><%= @pp1.how_to_go %>到<%= @pp1.main_place %>，<%= @pp1.run_begin_time %>到<%= @pp1.run_finish_time %>之间，<%= @pp1.how_long_time %>跑了<%= @pp1.how_long_kilos %>千米。<%= @pp1.stretch_or_not %>拉伸，<%= @pp1.how_to_go_back %>回<%= @pp1.back_to_where %>。
+<br>
+    人：<%= @pp1.about_people %>
+<br>
+    想：<%= @pp1.about_ideas %>
+<br>
+    遇：<%= @pp1.about_serendipities %>
+<br>
+    它：<%= @pp1.about_others %>
+
+   </p>
+
+   <p>
+      <%= link_to("加入购物车", add_to_cart_pp1_path(@pp1), :method => :post, :class => "btn btn-primary btn-danger") %>
+   </p>
+
+</div>
+
+<table class = "table">
+  <thead>
+    <tr>
+      <th>什么鱼</th>
+      <th>投放者</th>
+      <th>入水时间</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @pp1.how_long_kilos %></td>
+      <td><%= @pp1.date %></td>
+      <td><%= @pp1.week %></td>
+      <td> <%= link_to('Edit', edit_pp1_path(@pp1), class: "btn btn-default btn-xs") %></td>
+      <td> <%= link_to('Delete', pp1_path(@pp1), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default btn-xs") %></td>
+    </tr>
+  </tbody>
+</table>

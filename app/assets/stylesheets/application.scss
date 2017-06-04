@@ -17,3 +17,182 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+//---------Navbar---------
+
+ .navbar-default {
+     background-color: #FF7043;
+     border-color: #FF7043;
+     margin-bottom: 0;
+     border-radius: 0;
+     font-size: 16px;
+ }
+
+ .navbar-default .navbar-brand {
+     color: #FAFAFA;
+     padding: 10px 10px;
+     line-height: 30px;
+     font-size: 30px;
+ }
+
+ .navbar-default .navbar-brand:hover,
+ .navbar-default .navbar-brand:focus {
+     color: #D84315;
+     background-color: transparent;
+ }
+
+ .navbar-default .navbar-nav > li > a {
+     color: white;
+ }
+
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+     color: #D84315;
+     background-color: transparent;
+ }
+
+ .navbar-default .navbar-nav > .active > a,
+ .navbar-default .navbar-nav > .active > a:hover,
+ .navbar-default .navbar-nav > .active > a:focus {
+     color: white;
+     background-color: transparent;
+ }
+
+ .navbar-default .navbar-nav > .open > a,
+ .navbar-default .navbar-nav > .open > a:focus,
+ .navbar-default .navbar-nav > .open > a:hover {
+     background-color: transparent;
+     color: #D84315;
+ }
+
+
+
+ //---------Box---------
+
+ .box {
+     background-image: url("南体跑道1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 50px;
+
+     .box-head {
+         background-color: rgba(250, 250, 250, 0);
+         color: #FAFAFA;
+         padding-bottom: 0px;
+         margin-top: 30px;
+         margin-bottom: 0px;
+     }
+
+     .box-description {
+         background-color: rgba(250, 250, 250, 0.5);
+         padding-bottom: 5px;
+         margin-top: 10px;
+         margin-bottom: 50px;
+     }
+
+     .title {
+         text-align: center;
+         margin-bottom: 50px;
+     }
+
+     .slogan {
+         color: #222;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         text-align: center;
+         font-size: 24px;
+         top: 12px;
+     }
+
+     .lead {
+         margin-bottom: 60px;
+         text-align: center;
+         color: white;
+     }
+ }
+
+ .box_product {
+    //  background-image: url("南体跑道1.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 50px;
+
+     .box-head {
+         background-color: rgba(250, 250, 250, 0);
+         color: #FAFAFA;
+         padding-bottom: 0px;
+         margin-top: 30px;
+         margin-bottom: 0px;
+     }
+
+     .box-description {
+         background-color: rgba(250, 250, 250, 0.5);
+         padding-bottom: 5px;
+         margin-top: 10px;
+         margin-bottom: 50px;
+     }
+
+     .title {
+         text-align: center;
+         margin-bottom: 50px;
+     }
+
+     .slogan {
+         color: #222;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         text-align: center;
+         font-size: 24px;
+         top: 12px;
+     }
+
+     .lead {
+         margin-bottom: 60px;
+         text-align: center;
+         color: white;
+     }
+ }
+
+
+.content-section {
+  padding-bottom: 50px;
+}
+
+//---------Footer---------
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+}
+
+.footer-below {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 50px;
+   margin: 0 -30px;
+   background-color: #BF360C;
+
+   p {
+       color: white;
+       margin-top: 3px;
+     }
+}
+
+.footer-website {
+  color: white;
+}
+
+//----markdown pic----
+
+img[alt="fitpic"] {
+  max-width:  90%;
+  display: block;
+  align: center;
+}
