@@ -37,6 +37,7 @@ class Admin::ProductsController < ApplicationController
     end
   end
 
+
   def destroy
     @product = Product.find(params[:id])
 
@@ -49,5 +50,10 @@ class Admin::ProductsController < ApplicationController
 
   def product_params
     params.require(:product).permit(:title, :description, :example, :price, :image)
+    
+  private
+
+  def product_params
+    params.require(:product).permit(:title, :description, :price, :image)
   end
 end
