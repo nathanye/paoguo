@@ -19,6 +19,7 @@ def markdown(text)
       options = {
 
         :fenced_code_blocks => true,
+        :table => true,
 
         :no_intra_emphasis => true,
 
@@ -30,7 +31,6 @@ def markdown(text)
 
         :superscript => true,
 
-        :tables => true,
 
       }
 

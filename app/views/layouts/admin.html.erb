@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> 管理员 后台</title>
+  <title> 跑过——记者站</title>
+  <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="/images/logo_orange.ico">
+
 </head>
 <body>
-  <div class="container">
-    <%= render "common/navbar" %>
+  <div class="container-fluid">
     <div class="row">
+    <%= render "common/navbar" %>
       <div class="col-md-2">
         <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-          <li> <%= link_to("产品列表", admin_products_path) %> </li>
+          <li> <%= link_to("产品模版", admin_products_path) %> </li>
+          <li> <%= link_to("订单列表", admin_products_path) %> </li>
+          <li> <%= link_to("跑记仓库", admin_products_path) %> </li>
         </ul>
       </div>
       <div class="col-md-10">
