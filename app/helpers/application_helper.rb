@@ -28,9 +28,9 @@ def markdown(text)
 
         :lax_html_blocks => true,
 
-        :superscript => true
+        :superscript => true,
 
-        # :table => true
+        :tables => true,
 
       }
 

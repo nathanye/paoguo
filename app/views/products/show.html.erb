@@ -21,3 +21,14 @@
 
   </div>
 </div>
+<div class="row">
+  <div class="panel panel-danger col-lg-10 col-lg-offset-1" style="margin-top: 20px;">
+  <!-- Default panel contents -->
+  <div class="panel-heading">
+    <%= @product.title %>产品样例
+  </div>
+  <div class="panel-body">
+    <p> <%= markdown(@product.example)%> </p>
+  </div>
+</div>
+</div>

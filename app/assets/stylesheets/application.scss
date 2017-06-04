@@ -21,8 +21,8 @@
 //---------Navbar---------
 
  .navbar-default {
-     background-color: #FFAB91;
-     border-color: #FFAB91;
+     background-color: #FF7043;
+     border-color: #FF7043;
      margin-bottom: 0;
      border-radius: 0;
  }
@@ -40,7 +40,7 @@
  }
 
  .navbar-default .navbar-nav > li > a {
-     color: #FAFAFA;
+     color: white;
  }
 
  .navbar-default .navbar-nav > li > a:hover,
@@ -52,7 +52,7 @@
  .navbar-default .navbar-nav > .active > a,
  .navbar-default .navbar-nav > .active > a:hover,
  .navbar-default .navbar-nav > .active > a:focus {
-     color: #FAFAFA;
+     color: white;
      background-color: transparent;
  }
 
@@ -113,13 +113,37 @@
   padding-bottom: 50px;
 }
 
- //---------Footer---------
+//---------Footer---------
 
- footer {
-     color: white;
- }
+html {
+  position: relative;
+  min-height: 100%;
+}
 
- footer .footer-below {
-     padding: 5px 0;
-     background-color: #BF360C;
- }
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+}
+
+.footer-below {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Set the fixed height of the footer here */
+   height: 50px;
+   margin: 0 -30px;
+   background-color: #BF360C;
+
+   p {
+       color: white;
+       margin-top: 3px;
+     }
+}
+
+//----markdown pic----
+
+img[alt="fitpic"] {
+  max-width:  90%;
+  display: block;
+  align: center;
+}
