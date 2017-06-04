@@ -35,7 +35,9 @@
           <%= product.price %>
         </td>
         <td>
-          <%= link_to("Edit", edit_admin_product_path(product)) %>
+          <%= link_to("编辑", edit_admin_product_path(product)) %>
+          <br>
+          <%= link_to("删除", admin_product_path(product), :method => :delete, :data => { :confirm => "你确定要删除吗?" }) %>
         </td>
       </tr>
     <% end %>
