@@ -8,29 +8,24 @@ Rails.application.routes.draw do
     end
   end
   namespace :customer do
-    resources :products
+    resources :products do
+      resources :pp1s do
+        resources :pp1as
+      end
+    end
   end
-
   root 'welcome#index'
-
   resources :products
-
-
   resources :pp1s do
     member do
       post :add_to_cart
     end
   end
-
   get 'test' => 'pp1#test'
-
   resources :carts do
     collection do
       delete :clean
     end
   end
-
   resources :cart_items
-
-
 end
