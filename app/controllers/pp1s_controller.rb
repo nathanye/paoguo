@@ -1,8 +1,8 @@
 class Pp1sController < ApplicationController
 
-  # def index
-  #   @pp1s = Pp1.all
-  # end
+  def index
+    @pp1s = Pp1.all
+  end
   def new
     @product = Product.find(params[:product_id])
     @pp1 = Pp1.new
@@ -24,7 +24,7 @@ class Pp1sController < ApplicationController
   end
 
   def add_to_cart
-    @product = Product.find(params[:product_id])
+    # @product = Product.find(params[:product_id])
     @pp1 = Pp1.find(params[:id])
     current_cart.add_pp1_to_cart(@pp1)
     redirect_to :back
