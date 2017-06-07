@@ -1,5 +1,5 @@
 
-<%= simple_form_for @pp1 do |f| %>
+<%= simple_form_for [@product, @pp1] do |f| %>
   <div class="form_group">
     <%= f.input :date, :label => "今天的日期是？", :placeholder => "请输入今天的日期，例如：2017年5月23日", input_html: { class: "form_control" } %>
     <%= f.input :week, :label => "今天是星期几？", :collection => ["周一","周二","周三","周四","周五","周六","周日"], :selected => "周六"  %>
