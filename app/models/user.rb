@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   has_many :pp1s
   has_many :pp1as
+  has_many :products
 
 
   def admin?
