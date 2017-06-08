@@ -1,6 +1,6 @@
 class Pp1sController < ApplicationController
 
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
 
   def index
     @pp1s = Pp1.all
