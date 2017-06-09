@@ -27,7 +27,7 @@ class Pp1sController < ApplicationController
     # @product = Product.find(params[:product_id])
     @pp1 = Pp1.find(params[:id])
     current_cart.add_pp1_to_cart(@pp1)
-    redirect_to :back
+    redirect_to :back, notice: "成功加入购物车！"
   end
 
 

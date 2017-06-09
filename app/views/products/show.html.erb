@@ -1,4 +1,5 @@
 <div class="row">
+   <%= render "common/flashes" %>
   <div class="col-md-5 col-md-offset-1">
     <% if @product.image.present? %>
       <%= image_tag(@product.image.medium.url, class: "thumbnail") %>
