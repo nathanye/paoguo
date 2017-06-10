@@ -41,8 +41,6 @@ gem 'reverse_markdown'
 gem 'html_massage'
 gem 'redcarpet'
 gem 'coderay'
-gem 'carrierwave-qiniu'
-gem 'qiniu-rs'
 
 
 group :development, :test do
