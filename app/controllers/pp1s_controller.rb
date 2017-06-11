@@ -1,5 +1,7 @@
 class Pp1sController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
     @pp1s = Pp1.all
   end
@@ -24,10 +26,20 @@ class Pp1sController < ApplicationController
   end
 
   def add_to_cart
-    # @product = Product.find(params[:product_id])
+    @product = Product.find(params[:product_id])
     @pp1 = Pp1.find(params[:id])
+<<<<<<< HEAD
     current_cart.add_pp1_to_cart(@pp1)
     redirect_to :back, notice: "成功加入购物车！"
+=======
+    if !current_cart.pp1s.include?(@pp1)
+      current_cart.add_pp1_to_cart(@product, @pp1)
+      flash[:notice] = "你已成功将 #{@pp1.product.title} 加入购物车"
+    else
+      flash[:warning] = "你的购物车内已有此物品"
+    end
+    redirect_to :back
+>>>>>>> john-checkout
   end
 
 
