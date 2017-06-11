@@ -11,6 +11,14 @@ class Cart < ApplicationRecord
     ci.save
   end
 
+  def add_product_to_cart(product)
+    ci = cart_items.build
+    ci.product = product
+    ci.pp1 = "1"
+    ci.quantity = 1
+    ci.save
+  end
+
   def clean!
     cart_items.destroy_all
   end
